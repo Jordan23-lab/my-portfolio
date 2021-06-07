@@ -7,3 +7,35 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+li{
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+}
+a{
+  text-decoration: none;
+  
+  /*below I changed the color*/
+  color: black;
+  /*I added some padding*/
+  padding: 2vw;
+  /*also changed the font family but that's totally irrelevant*/
+  font-family: monospace;
+}
+
+
+nav{
+    width: 100vw;
+    background-color: brown;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+body{
+  margin: 0;
+}
