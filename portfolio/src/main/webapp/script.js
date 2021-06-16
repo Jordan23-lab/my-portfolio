@@ -27,10 +27,21 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-async function showHardCodedMessage(){
+/*async function showHardCodedMessage(){
   const responseFromServer = await fetch('/hello');
   const textFromResponse = await responseFromServer.text();
 
   const dateContainer = document.getElementById('message-here');
   dateContainer.innerText = textFromResponse;
+}*/
+
+async function getFacts(){
+    const responseFromServer = await fetch('/hello');
+    const facts = await responseFromServer.json();
+    const container = document.getElementById('message-here');
+    //const randomNumber = 
+    container.innerText = facts[Math.floor(Math.random() * facts.length)];
+
+
+
 }
