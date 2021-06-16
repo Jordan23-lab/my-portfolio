@@ -38,10 +38,6 @@ function addRandomGreeting() {
 async function getFacts(){
     const responseFromServer = await fetch('/hello');
     const facts = await responseFromServer.json();
-    const container = document.getElementById('message-here');
-    //const randomNumber = 
-    container.innerText = facts[Math.floor(Math.random() * facts.length)];
-
-
-
+    const factsContainer = document.getElementById('message-here');
+    factsContainer.innerText = facts[Math.floor(Math.random() * facts.length)];
 }
