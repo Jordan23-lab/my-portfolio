@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwKP0X6LJsItzxGLpTStPfrG1NEDP0BeQ"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="createMap();">
     <div id="content">
 
       <header>
@@ -43,7 +44,8 @@
                 year I was 0.2 seconds away from the school record for the 100m and the 200m</p>
             </div>
             <div class="column">
-                <h3>Travel</h3>
+                <h2>Travel</h2>
+                <div id="map"></div>
                 <img src="/images/StMartin2.JPG", style="width:100%">
                 <p>I love to travel to new places and experience different cultures and see what life is like outside of my hometown. I am really fortunate that I had the opportunity to be able to go to countries like Spain, Jamaica, 
                 and even to places across the U.S like Los Angeles.</p>
@@ -59,10 +61,13 @@
     </div>
      
 
-      </main>
+    </main>
+
+    <footer>
+        
+    </footer>
         
 
-    
     </div>
   </body>
 </html>
