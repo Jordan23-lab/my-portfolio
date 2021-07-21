@@ -27,17 +27,16 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-/*async function showHardCodedMessage(){
-  const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
-
-  const dateContainer = document.getElementById('message-here');
-  dateContainer.innerText = textFromResponse;
-}*/
-
 async function getFacts(){
     const responseFromServer = await fetch('/hello');
     const facts = await responseFromServer.json();
     const factsContainer = document.getElementById('message-here');
     factsContainer.innerText = facts[Math.floor(Math.random() * facts.length)];
+}
+
+/** Creates a map and adds it to the page. */
+function createMap() {
+  const map = new google.maps.Map(
+      document.getElementById('map'),
+      {center: {lat: 37.422, lng: -122.084}, zoom: 16});
 }
